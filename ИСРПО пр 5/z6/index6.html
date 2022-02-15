@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.min.js" type="text/javascript"></script>
+    <script src="../jquery.orbit.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="jQ6.js"></script>
+    <link rel="stylesheet" href="css/orbit.css">
+
+    
+    
+        
+</head>
+<style type="text/css">
+        #featured { width: 940px; height: 450px; background: #009cff url('orbit/loading.gif') no-repeat center center; overflow: hidden; }
+</style>
+
+<body>
+
+
+    <div id="featured">
+        <img src="img/link.jpg" title="Link galliantly riding the majestic Epona across the hyrulian plains" alt="Link" />
+        <img src="img/ezio.jpg"  alt="Ezio" />
+        <img src="img/masterchief.jpg" title="Master Chief surveying Reach, home of his upcoming game"  alt="Master Chief" />
+        <img src="img/marcusfenix.jpg"  alt="Marcus Fenix" />
+   </div>
+   
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#featured').orbit({
+        'bullets': true,
+        'timer' : true,
+        'animation' : 'horizontal-slide'
+        });
+    });
+    </script>
+   
+    
+</body>
+
+</html>
